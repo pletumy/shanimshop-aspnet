@@ -1,7 +1,6 @@
 # ShanimShop - ASP.NET Ecommerce Website
 
-### Technoloy used
-
+## Technoloy used
 * Frontend: ASP.NET MVC (C#), API MAPVN
 * Backend: MSSQL
 
@@ -19,6 +18,14 @@ Admin:
 * Products management (Add/ Edit/ Delete)
 * Promotion management (Add/Edit/Delete)
 * Roles management
+
+### Setup
+```
++ Run ShanimShopDB2.sql to initiate database
++ Change constr in Webconfig
++ Run application
+```
+* Username: herluxxia || Password: 1234567
 
 ## Images 
 
@@ -39,14 +46,6 @@ Admin:
 ![dsnhapKho](/anh/dsnhapKho.jpg)
 
 ![dstaiKhoan](/anh/dstaiKhoan.jpg)
-
-### Setup
-```
-+ Run ShanimShopDB2.sql to initiate database
-+ Change constr in Webconfig
-+ Run application
-```
-* Username: herluxxia || Password: 1234567
 
 ## Authors
 * [ple.tumy@gmail.com](ple.tumy@gmail.com)
