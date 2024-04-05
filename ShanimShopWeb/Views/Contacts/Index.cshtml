@@ -1,0 +1,78 @@
+﻿
+@{
+    ViewBag.Title = "Liên hệ";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+@section Banner {
+    <!-- banner-2 -->
+    <div class="page-head_agile_info_w3l">
+
+    </div>
+}
+
+<!-- page -->
+<div class="services-breadcrumb">
+    <div class="agile_inner_breadcrumb">
+        <div class="container">
+            <ul class="w3_short">
+                <li>
+                    @Html.ActionLink("Trang chủ", "Index", "Home")
+                    <i>|</i>
+                </li>
+                <li>Liên hệ</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- //page -->
+<!-- contact page -->
+<div class="contact-w3l">
+    <div class="container">
+        <!-- tittle heading -->
+        <h3 class="tittle-w3l">
+            Liên hệ chúng tôi
+            <span class="heading-style">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </h3>
+        <!-- //tittle heading -->
+        <!-- contact -->
+        <div class="contact agileits">
+            <div class="contact-agileinfo">
+                <div class="contact-form wthree">
+                    <form action="#" method="post">
+                        <div class="">
+                            <input type="text" name="name" placeholder="Tên" required="">
+                        </div>
+                        <div class="">
+                            <input class="text" type="text" name="subject" placeholder="Chủ đề" required="">
+                        </div>
+                        <div class="">
+                            <input class="email" type="email" name="email" placeholder="Email" required="">
+                        </div>
+                        <div class="">
+                            <textarea placeholder="Thông tin" name="message" required=""></textarea>
+                        </div>
+                        <input type="submit" value="Gửi">
+                    </form>
+                </div>
+                <div class="contact-right wthree">
+       
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+        </div>
+        <!-- //contact -->
+    </div>
+</div>
+<!-- map -->
+<div class="map w3layouts">
+    <!--<iframe src="https://maps.google.com/maps?q=11,%20%C4%91%C6%B0%E1%BB%9Dng%20s%E1%BB%91%2027,%20S%C6%A1n%20K%E1%BB%B3,%20T%C3%A2n%20Ph%C3%BA,%20TP.%20HCM&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+            allowfullscreen></iframe> -->
+   <iframe src="https://maps.google.com/maps?q=UEH%20c%C6%A1%20s%E1%BB%9F%20B&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" allowfullscreen></iframe>
+</div>
+<!-- //map -->

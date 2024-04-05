@@ -1,0 +1,55 @@
+﻿@using WebBanDienThoai.Models
+
+
+@{
+    ViewBag.Title = "Trang chủ";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+@{
+    List<SANPHAM> newIphoneProducts = ViewBag.IphoneProducts as List<SANPHAM>;
+
+    List<SANPHAM> newSamsungProducts = ViewBag.SamsungProducts as List<SANPHAM>;
+
+    List<SANPHAM> newHeadphoneProducts = ViewBag.HeadphoneProducts as List<SANPHAM>;
+}
+
+@Html.Action("Banner", "Home")
+<!-- top Products -->
+<div class="ads-grid">
+    <div class="container">
+        <!-- tittle heading -->
+        <h3 class="tittle-w3l">
+            Sản phẩm nổi bật
+            <span class="heading-style">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </h3>
+        @Html.Action("SideBarHome", "Home")
+        <!-- product right -->
+        <div class="agileinfo-ads-display col-md-9">
+            <div class="wrapper">
+                <!-- first section (nuts) -->
+                @if (newIphoneProducts != null && newIphoneProducts.Count > 0)
+                {
+                    @Html.Partial("~/Views/Products/FirstStyleProducts.cshtml", newIphoneProducts)
+                }
+                <!-- second section -->
+  
+                <!-- third section (oils) -->
+                @if (newSamsungProducts != null && newSamsungProducts.Count > 0)
+                {
+                    @Html.Partial("~/Views/Products/FirstStyleProducts.cshtml", newSamsungProducts)
+                }
+                <!-- fourth section (noodles) -->
+                @if (newHeadphoneProducts != null && newHeadphoneProducts.Count > 0)
+                {
+                    @Html.Partial("~/Views/Products/FirstStyleProducts.cshtml", newHeadphoneProducts)
+                }
+            </div>
+        </div>
+    </div>
+</div>
+@Html.Action("SecondStyleProducts", "Products")
