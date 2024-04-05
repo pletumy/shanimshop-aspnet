@@ -12,6 +12,7 @@ Client:
 * Proceed payment
 * Order management
 * Account management (Change avatar/ password/ basic information/ etc)
+
 Admin:
 * Statistics
 * Order management 
@@ -19,7 +20,7 @@ Admin:
 * Promotion management (Add/Edit/Delete)
 * Roles management
 
-### Setup
+## Setup
 ```
 + Run ShanimShopDB2.sql to initiate database
 + Change constr in Webconfig
